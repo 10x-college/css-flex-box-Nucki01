@@ -1,0 +1,151 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            margin:20px;
+            border-radius: 40px;
+        }
+
+        .sidebar {
+            width: 80px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            gap: 40px;
+            border-radius: 40px;
+        }
+
+        .sidebar-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #888;
+            background: none;
+            border: 2px solid transparent;
+        }
+
+        .sidebar-icon:hover {
+            background-color: rgba(42, 42, 42, 0.6);
+            border: 2px solid #00f2fe;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 30px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            margin-top: 7px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .content-area {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 14px);
+            background-color: rgba(42, 42, 42, 0.8);
+            border-radius: 16px;
+            padding: 30px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            border: 2px solid rgba(0, 242, 254, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .card-full{
+            flex:1 1 100%;
+        }
+
+        .dashboard {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .right-panel {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap:150px;
+        }
+
+        .stack {
+            position: relative;
+            height: 280px;
+        }
+
+        .stack-card {
+            position: absolute;
+            width: 240px;
+            height: 260px;
+            border-radius: 32px;
+            margin-top: 120px;
+        }
+
+        .stack-card.teal {
+            background-image: linear-gradient(to right top, #053137, #004c5d, #00678a, #0082ba, #129beb);
+            transform: rotate(45deg) translate(20px, -30px);
+        }
+
+        .stack-card.gold {
+            background-image: linear-gradient(to right top, #370512, #600822, #8c0a31, #bb0d3e, #eb124b);
+            transform: rotate(15deg) translate(20px, -30px);
+        }
+
+        .stack-card.purple {
+            background-image: linear-gradient(to right top, #270537, #39025d, #460088, #4c03b7, #4512eb);
+
+        }
+
+        .right-card {
+            
+            margin-right: 20px;
+            margin-bottom: 45px;
+            
+        }
+
